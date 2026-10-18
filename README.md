@@ -44,4 +44,16 @@ Slicers: date, city, category, channel, payment method.
 - Cleaned and analyzed 468 retail transaction lines using Python (pandas), handling missing discounts and inconsistent text values; calculated net sales, costs, profit and margin.
 - Wrote SQL queries to evaluate monthly trends, category/city performance, top products and sales-channel mix; built an Excel KPI summary and a Power BI dashboard plan for business reporting.
 
+- ## Power BI Dashboard
+
+The interactive Power BI dashboard provides insights into retail sales performance and profitability.
+
+### Dashboard Preview
+
+![Retail Sales Dashboard](Dashboard.png)
+
+### Project File
+
+[Download the Power BI Dashboard (.pbix)](Retail_Sales_Profitability_Analysis.pbix)
+
 **Note:** This is synthetic practice data. Only claim the Power BI dashboard as completed after you build and save it in Power BI Desktop. The provided guide and DAX measures are ready to use, but a `.pbix` file cannot be generated automatically here.
