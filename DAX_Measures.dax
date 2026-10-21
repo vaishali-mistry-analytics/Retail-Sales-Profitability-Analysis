@@ -1,0 +1,20 @@
+-- Create these measures in Power BI after importing retail_sales_cleaned.csv.
+Total Sales = SUM(retail_sales_cleaned[net_sales])
+
+Total Profit = SUM(retail_sales_cleaned[profit])
+
+Total Orders = DISTINCTCOUNT(retail_sales_cleaned[order_id])
+
+Unique Customers = DISTINCTCOUNT(retail_sales_cleaned[customer_id])
+
+Units Sold = SUM(retail_sales_cleaned[quantity])
+
+Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
+
+Average Order Value = DIVIDE([Total Sales], [Total Orders], 0)
+
+Sales LY/Previous Month note:
+-- The sample covers Jan-Jun 2026. For time-intelligence measures, first create a Date table
+-- and mark it as the date table. Optional measure:
+Sales Previous Month =
+CALCULATE([Total Sales], DATEADD('Date'[Date], -1, MONTH))
